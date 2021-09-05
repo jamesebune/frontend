@@ -1,0 +1,80 @@
+:root{
+--darkblue:hsl(233,47%,7%);
+--darksaturatedblue:hsl(244, 38%, 16%);
+
+--mainheading:hsl(0, 0%, 100%);
+--mainparagraph:hsla(0, 0%, 100%, 0.75);
+--statsheading:hsla(0, 0%, 100%, 0.6);
+--accent:hsl(277, 64%, 61%);
+}
+
+body{
+    padding: 5em;
+    background-color: var(--darkblue);
+    
+}
+span{
+    color: var(--accent);
+}
+p{
+    
+    color: var(--mainparagraph);
+}
+h1,h2,h3{
+    color: var(--mainheading);
+}
+
+.stats h3{
+    /* color: var(--statsheading); */
+    color: var(--mainheading);
+}
+
+.container{
+    font-size: 15px;
+    background-color:var(--darksaturatedblue);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.doc{
+    font-size: 15px; 
+    padding: 2em;
+}
+.stats{
+    text-align: center;
+}
+
+.image{
+    min-height: 350px;
+    background-color: var(--accent);
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 25px 25px 0 0;
+
+}
+
+@media (min-width:750px) {
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .image{
+        min-height: 350px;
+        background-color: var(--accent);
+        background-image: url(images/image-header-mobile.jpg);
+        background-size: cover; 
+        background-blend-mode: multiply;
+        background-repeat: no-repeat; /* trying to make the image move to one side in the desktop mode */
+        background-attachment: fixed;
+        background-position: center; 
+        
+    }
+
+}
