@@ -67,13 +67,19 @@ h1,h2,h3{
         
 
     }
-
+    
     
     .doc{
+        
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 350px;
     }
+
+    /* .stats{
+        display: flex;
+        flex-direction: row;
+    } */
     .image{
         min-height: 350px;
         background-color: var(--accent);
